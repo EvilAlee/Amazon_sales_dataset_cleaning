@@ -26,6 +26,8 @@ All 16 columns were originally stored as `str`. After cleaning: 4 `float64`, 1 `
 
 Ran full structural checks: `head()`, `info()`, `describe()`, `isnull().sum()`, `duplicated()`, `value_counts()` on all categoricals, and a null heatmap.
 
+![Missing Values Before Cleaning](images/nulls_heatmap_before.png)
+
 **8 columns had missing values:**
 
 | Column | Nulls | % Missing |
@@ -150,6 +152,8 @@ Heatmap analysis revealed that null patterns in these two columns were correlate
 Post-cleaning `isnull().sum()` confirmed **zero nulls across all 15 columns**.
 
 Final heatmap showed a fully black grid — no white lines.
+
+![Missing Values After Cleaning](images/nulls_heatmap_after.png)
 
 **Final dtypes:**
 
